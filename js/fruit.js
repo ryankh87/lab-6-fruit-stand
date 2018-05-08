@@ -2,36 +2,71 @@
 /* exported fruitStand*/
 
 var fruitStand = [
+
     {
-        apple: {
-            color: 'red',
-            shape: 'round',
-            taste: 'sweet',
-            harvest: 'Fall',
+        name: 'apple',
+        color: 'red',
+        shape: 'round',
+        taste: 'sweet',
+        harvest: 'Fall',
+        image: 'apple.jpg',
+        createLi: function() {
+            console.log(`I'm a ${this.color} ${this.name}`);
+            const createListEle = document.createElement('li');
+            createListEle.textContent = this.taste;
 
-        },
-        Tangerine: {
-            color: 'orange',
-            shape: 'round',
-            taste: 'sweet',
-            harvest: 'Winter',
+            return createListEle;
+        }
 
-        },
+    },
 
-        Pineapple: {
-            color: 'yellow',
-            shape: 'round',
-            taste: 'sweet',
-            harvest: 'Spring',
+    {
+        name: 'tangerine',
+        color: 'orange',
+        shape: 'round',
+        taste: 'sweet',
+        harvest: 'Winter',
+        image: 'tangerine.jpg',
+        createLi: function() {
+            console.log(`I'm an ${this.color} ${this.name}`);
+            const createListEle = document.createElement('li');
+            createListEle.textContent = `${this.name} are ${this.taste}`;
 
-        },
+            return createListEle;
+        }
+    },
 
-        Fig: {
-            color: 'purple',
-            shape: 'round',
-            taste: 'sweet',
-            harvest: 'Winter',
+    {
+        name: 'pineapple',
+        color: 'yellow',
+        shape: 'round',
+        taste: 'sweet',
+        harvest: 'Spring',
+        image: 'pineapple.jpg',
+        createLi: function() {
+            console.log(`I'm a ${this.color} ${this.name}`);
+            const createListEle = document.createElement('li');
+            createListEle.textContent = `${this.name} are ${this.taste}`;
 
+            return createListEle;
+
+        }
+    },
+
+    {
+        name: 'fig',
+        color: 'purple',
+        shape: 'round',
+        taste: 'sweet',
+        harvest: 'Winter',
+        image: 'fig.jpg',
+        createLi: function() {
+            console.log(`I'm a ${this.color} ${this.name}`);
+            const createListEle = document.createElement('li');
+            createListEle.textContent = `${this.name} are ${this.taste}`;
+
+            return createListEle;
         },
     }
+
 ];
