@@ -9,14 +9,19 @@ var fruitStand = [
         shape: 'round',
         taste: 'sweet',
         harvest: 'Fall',
-        image: '/images/apple.jpg',
+        image: 'images/apples.jpg',
         createLi: function() {
             console.log(`I'm a ${this.color} ${this.name}`);
             const createListEle = document.createElement('li');
             createListEle.textContent = `${this.name}!`;
-
             return createListEle;
+        },
+        showImage: function() {
+            var img = document.createElement('img');
+            img.setAttribute('src', this.image);
+            return img;
         }
+
 
     },
 
@@ -26,13 +31,18 @@ var fruitStand = [
         shape: 'round',
         taste: 'sweet',
         harvest: 'Winter',
-        image: '/images/tangerine.jpg',
+        image: 'images/tangerines.jpg',
         createLi: function() {
             console.log(`I'm an ${this.color} ${this.name}`);
             const createListEle = document.createElement('li');
             createListEle.textContent = `${this.name}!`;
 
             return createListEle;
+        },
+        showImage: function() {
+            var img = document.createElement('img');
+            img.setAttribute('src', this.image);
+            return img;
         }
     },
 
@@ -42,7 +52,7 @@ var fruitStand = [
         shape: 'round',
         taste: 'sweet',
         harvest: 'Spring',
-        image: '/images/pineapple.jpg',
+        image: 'images/pineapples.jpg',
         createLi: function() {
             console.log(`I'm a ${this.color} ${this.name}`);
             const createListEle = document.createElement('li');
@@ -50,6 +60,11 @@ var fruitStand = [
 
             return createListEle;
 
+        },
+        showImage: function() {
+            var img = document.createElement('img');
+            img.setAttribute('src', this.image);
+            return img;
         }
     },
 
@@ -59,7 +74,7 @@ var fruitStand = [
         shape: 'round',
         taste: 'sweet',
         harvest: 'Winter',
-        image: '/images/fig.jpg',
+        image: 'images/figs.jpg',
         createLi: function() {
             console.log(`I'm a ${this.color} ${this.name}`);
             const createListEle = document.createElement('li');
@@ -67,6 +82,11 @@ var fruitStand = [
 
             return createListEle;
         },
+        showImage: function() {
+            var img = document.createElement('img');
+            img.setAttribute('src', this.image);
+            return img;
+        }
     }
 
 ];
