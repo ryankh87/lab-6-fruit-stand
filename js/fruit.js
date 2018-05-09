@@ -14,6 +14,7 @@ var fruitStand = [
             console.log(`I'm a ${this.color} ${this.name}`);
             const createListEle = document.createElement('li');
             createListEle.textContent = `${this.name}!`;
+            createListEle.style.cssText = ('color: red');
             return createListEle;
         },
         showImage: function() {
@@ -36,7 +37,7 @@ var fruitStand = [
             console.log(`I'm an ${this.color} ${this.name}`);
             const createListEle = document.createElement('li');
             createListEle.textContent = `${this.name}!`;
-
+            createListEle.style.cssText = ('color: orange');
             return createListEle;
         },
         showImage: function() {
@@ -57,7 +58,7 @@ var fruitStand = [
             console.log(`I'm a ${this.color} ${this.name}`);
             const createListEle = document.createElement('li');
             createListEle.textContent = `${this.name}!`;
-
+            createListEle.style.cssText = ('color: yellow');
             return createListEle;
 
         },
@@ -79,7 +80,7 @@ var fruitStand = [
             console.log(`I'm a ${this.color} ${this.name}`);
             const createListEle = document.createElement('li');
             createListEle.textContent = `${this.name}!`;
-
+            createListEle.style.cssText = ('color: purple');
             return createListEle;
         },
         showImage: function() {
